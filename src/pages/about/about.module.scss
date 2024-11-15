@@ -1,0 +1,50 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2.4rem;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.aboutText {
+  margin-bottom: 2.4rem;
+  font-weight: 200;
+  background-color: var(--bg-opaque);
+  backdrop-filter: blur(12px);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  background-color: var(--bg-opaque);
+  backdrop-filter: blur(12px);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.linksText {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  font-size: var(--text-sm);
+  color: var(--brand);
+}
+
+.highlightFirstLetter:first-letter {
+  background: var(--background-light);
+  padding: 1rem;
+  border-radius: 0.4rem;
+
+  font-size: var(--text-md);
+  font-weight: bold;
+
+  margin-right: 0.6rem;
+
+  float: left;
+}

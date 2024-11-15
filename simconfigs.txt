@@ -1,0 +1,42 @@
+simulation.setConfig({
+        simResolution: 256, // 256 Resolution of the simulation grid
+        dyeResolution: 1024, // 1024 Resolution of the dye grid
+        captureResolution: 512, //512 Resolution of captured frames
+        densityDissipation: 0.6, //1.2 Rate at which density dissipates
+        velocityDissipation: 0.8, //0.5 Rate at which velocity dissipates
+        pressure: 0.7, //0.7 Pressure value used in the simulation
+        pressureIterations: 80, //20 Number of pressure iterations
+        curl: 160, //30 Curl value used in the simulation
+
+        splatRadius: 0.6, //0.3 Radius of the splats
+        splatForce: 8000, // Force applied by the splats
+        inverted: false,
+        shading: true, // Enables shading in the visualization
+        colorful: true, // Enables rapid changing of colors
+        colorUpdateSpeed: 15, // Speed of color update
+        colorPalette: [
+          "#EA2027",
+          "#EE5A24",
+          "#c0392b",
+          "#1e272e",
+          "#e67e22",
+          "#e74c3c",
+          "#f39c12",
+        ], // #F27ED3", "#B884BF", "#9D8EBF", "#0396A6", "#038C7F" Custom color palette (empty by default, uses hex colors)
+        hover: true, // Enables interaction on hover
+        backgroundColor: "#000000", // Background color of the canvas
+        transparent: false, // Makes the canvas transparent if true
+        brightness: 0.9, // Color brightness (Recommend lower than 1.0 if BLOOM is true)
+        bloom: true, // Enables bloom effect
+        bloomIterations: 4, // Number of bloom effect iterations
+        bloomResolution: 512, // Resolution of the bloom effect
+        bloomIntensity: 0.1, // Intensity of the bloom effect
+        bloomThreshold: 0.7, // Threshold for the bloom effect
+        bloomSoftKnee: 0.1, // Soft knee value for the bloom effect
+        sunrays: true, // Enables sunrays effect
+        sunraysResolution: 256, // Resolution of the sunrays effect
+        sunraysWeight: 0.03, // Weight of the sunrays effect
+
+      /// FIRE
+
+      

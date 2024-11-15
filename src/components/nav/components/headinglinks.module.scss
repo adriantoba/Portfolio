@@ -1,0 +1,15 @@
+.links {
+  display: flex;
+  gap: 1.6rem;
+
+  a {
+    opacity: 0.5;
+    position: relative;
+    z-index: 20;
+  }
+
+  a:hover {
+    color: var(--brand);
+    opacity: 1;
+  }
+}

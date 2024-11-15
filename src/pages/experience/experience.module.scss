@@ -1,0 +1,37 @@
+.experience {
+  margin-bottom: 2.4rem;
+
+  background-color: var(--bg-opaque);
+  backdrop-filter: blur(12px);
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 1.2rem;
+}
+
+.title {
+  font-size: var(--text-md);
+  font-weight: bold;
+}
+
+.position {
+  color: var(--brand);
+  font-weight: bold;
+}
+
+.description {
+  margin-bottom: 1.8rem;
+  font-weight: 200;
+}
+
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
