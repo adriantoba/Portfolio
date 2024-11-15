@@ -8,7 +8,7 @@ import {
 } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
-import styles from "./SidebarRuler.module.scss";
+import styles from "./sidebarRuler.module.scss";
 
 // Total number of lines on the side of the page
 //const NUM_LINES = 100;
