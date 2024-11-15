@@ -27,7 +27,7 @@ const SideNavBar = () => {
   const mouseY = useMotionValue(Infinity);
   const [numLines, setNumLines] = useState(0);
 
-  const [selected, setSelected] = useState("");
+  const [, setSelected] = useState("");
 
   useEffect(() => {
     const calculateNumLines = () => {

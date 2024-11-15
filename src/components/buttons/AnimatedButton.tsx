@@ -12,6 +12,7 @@ export const DotExpandButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <button
         className="group flex bg-[var(--brand)]  text-galactic-primary font-semibold h-20 items-center gap-2 rounded-full bg-galactic-accent pl-3 pr-4 transition-all duration-300 ease-in-out hover:bg-black hover:pl-2 hover:text-white active:bg-neutral-700"
+        ref={ref}
         onClick={onClick}
       >
         <span className="rounded-full bg-transparent  text-sm transition-all duration-300 group-hover:bg-white group-hover:p-3">
