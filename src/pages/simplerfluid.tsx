@@ -16,8 +16,8 @@ export default function SimulationFluid() {
       simulationRef.current = simulation;
       simulation.setConfig({
         simResolution: 256, // 256 Resolution of the simulation grid
-        dyeResolution: 1280, // 1024 Resolution of the dye grid
-        captureResolution: 512, //512 Resolution of captured frames
+        dyeResolution: 512, // 1024 Resolution of the dye grid
+        captureResolution: 128, //512 Resolution of captured frames
         densityDissipation: 1, //1.2 Rate at which density dissipates
         velocityDissipation: 0.25, //0.5 Rate at which velocity dissipates
         pressure: 0.9, //0.7 Pressure value used in the simulation

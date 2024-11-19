@@ -13,30 +13,29 @@ export const About = () => {
         <div>
           <Reveal>
             <p className={`${styles.aboutText} ${styles.highlightFirstLetter}`}>
-              Hey! I&apos;m Adrian Toba, and I&apos;m currently learning
-              frontend development, focusing on technologies like HTML, CSS,
-              JavaScript, React, and Node.js. I enjoy turning ideas into
-              functional, responsive designs and building user-friendly
-              applications. This portfolio is a reflection of my learning
-              journey—feel free to explore! .
+              Hi, I&apos;m Adrian Toba, a front-end development enthusiast with
+              a growing expertise in HTML, CSS, JavaScript, React, and Node.js.
+              I&apos;m passionate about transforming ideas into functional,
+              responsive designs and crafting intuitive, user-friendly
+              applications. This portfolio showcases my journey and
+              progress—feel free to explore!
               <br />
             </p>
           </Reveal>
           <Reveal>
             <p className={styles.aboutText}>
-              My skills include HTML, CSS, JavaScript, and React. I&apos;ve also
-              gained experience with backend technologies such as Node.js,
-              Firebase, and MongoDB, enabling me to create full-stack
-              applications.
+              My skill set (so far) includes front-end technologies like HTML,
+              CSS, JavaScript, and React, complemented by experience with
+              back-end tools such as Node.js, Firebase, and MongoDB, enabling me
+              to develop full-stack applications.
             </p>
           </Reveal>
 
           <Reveal>
             <p className={styles.aboutText}>
-              I&apos;m always looking for new challenges and opportunities to
-              learn and grow as a developer. If you&apos;re interested in
-              working together or have any questions, please don&apos;t hesitate
-              to get in touch!
+              I&apos;m eager to take on new challenges and continuously expand
+              my knowledge as a developer. If you&apos;d like to collaborate or
+              have any questions, don&apos;t hesitate to reach out!
             </p>
           </Reveal>
           <Reveal>

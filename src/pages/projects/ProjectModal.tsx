@@ -1,11 +1,10 @@
 import styles from "./projectmodal.module.scss";
-import { useEffect } from "react";
 import ReactDOM from "react-dom";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
-import { useLenis } from "lenis/react";
+import { useEffect } from "react";
 
 interface Props {
   isOpen: boolean;
@@ -28,19 +27,15 @@ export const ProjectModal = ({
   code,
   tech,
 }: Props) => {
-  const lenis = useLenis();
   useEffect(() => {
+    const body = document.querySelector("body");
+
     if (isOpen) {
-      lenis?.stop();
+      body!.style.overflowY = "hidden";
     } else {
-      lenis?.start();
+      body!.style.overflowY = "scroll";
     }
-
-    return () => {
-      lenis?.start();
-    };
-  }, [isOpen, lenis]);
-
+  }, [isOpen]);
   const content = (
     <div className={`${styles.modal} modal`} onClick={() => setIsOpen(false)}>
       <button className={styles.closeModalBtn}>
@@ -70,10 +65,10 @@ export const ProjectModal = ({
             </p>
             <div className={styles.links}>
               <Link target="_blank" rel="nofollow" to={code}>
-                <AiFillGithub /> source code
+                <AiFillGithub /> Source Code
               </Link>
               <Link target="_blank" rel="nofollow" to={projectLink}>
-                <AiOutlineExport /> live project
+                <AiOutlineExport /> Demo
               </Link>
             </div>
           </div>

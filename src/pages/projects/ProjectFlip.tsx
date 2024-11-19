@@ -58,7 +58,7 @@ export default function FlipCard({
             alt="image"
             className="h-full w-full rounded-2xl object-cover shadow-md shadow-black/40"
           />
-          <div className="absolute bottom-4 left-4 text-3xl font-bold text-black">
+          <div className="absolute bottom-4 left-4 text-3xl font-bold text-[var(--text)] bg-[var(--background)] p-2 rounded-lg">
             {title}
           </div>
         </div>
@@ -66,7 +66,7 @@ export default function FlipCard({
         {/* Back */}
         <div
           className={`
-            absolute h-full w-full rounded-2xl bg-[var(--bg-opaque)] p-4 text-slate-200 [backface-visibility:hidden] backdrop-blur-md 
+            absolute h-full w-full rounded-2xl bg-[var(--bg-opaque)] p-4 text-slate-200 [backface-visibility:hidden] backdrop-blur-md
             ${self[1]}`}
         >
           <div className="flex min-h-full flex-col gap-2">

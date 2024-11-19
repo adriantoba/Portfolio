@@ -1,9 +1,5 @@
 import styles from "./headinglinks.module.scss";
-import {
-  AiFillLinkedin,
-  AiFillGithub,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -31,16 +27,6 @@ export const MyLinks = () => {
       >
         <Link to="https://github.com/adriantoba" target="_blank" rel="nofollow">
           <AiFillGithub size="2.4rem" />
-        </Link>
-      </motion.span>
-
-      <motion.span
-        initial={{ y: -30, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
-      >
-        <Link to="#" target="_blank" rel="nofollow">
-          <AiFillInstagram size="2.4rem" />
         </Link>
       </motion.span>
     </div>

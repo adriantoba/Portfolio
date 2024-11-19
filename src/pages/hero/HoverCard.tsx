@@ -73,7 +73,7 @@ export const TiltShineCard = () => {
         onMouseLeave={handleMouseLeave}
         style={{
           transform,
-          backgroundImage: `url(public/project-imgs/profile.jpg)`,
+          backgroundImage: `url(https://i.imgur.com/VvA3f0K.jpeg)`,
           backgroundSize: "100%",
           backgroundRepeat: "no-repeat",
         }}

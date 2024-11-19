@@ -1,4 +1,4 @@
-import { DotExpandButton } from "../../components/buttons/AnimatedButton";
+import CustomButton from "../../components/buttons/CustomButton";
 import { Reveal } from "../../components/utils/Reveal";
 import styles from "./hero.module.scss";
 import { TiltShineCard } from "./HoverCard";
@@ -8,7 +8,7 @@ export const Hero = () => {
     document.body
       .appendChild(
         Object.assign(document.createElement("a"), {
-          href: "/public/AT-CV.pdf",
+          href: "https://drive.google.com/file/d/1uu1FyTIggyMg6DfHfVuK11I3bbF06c40/view?usp=sharing",
           target: "_blank",
         })
       )
@@ -29,32 +29,32 @@ export const Hero = () => {
           </h1>
         </Reveal>
         <Reveal>
-          <h2 className={styles.subTitle}>
-            I&apos;m a <span>Frontend Developer</span>
+          <h2 className={`${styles.subTitle} pb-3`}>
+            I&apos;m an <span className="">aspiring </span>
+            <span>Frontend Developer</span>
           </h2>
         </Reveal>
         <Reveal>
           <p className={styles.aboutCopy}>
-            I&apos;m curently learing frontend technolgies, from HTML and CSS to
-            React and Node JS. I&apos;m passionate about creating beautiful,
-            responsive applications that provide a great user experience.
-            Let&apos;s connect!
+            I&apos;m exploring technologies from HTML and CSS to React Node.js
+            and NextJs. I love turning creative ideas into interactive,
+            user-friendly designs. Whether it&apos;s building sleek interfaces
+            or solving coding challenges, I&apos;m always excited to learn and
+            grow. Let&apos;s connect!
           </p>
         </Reveal>
-        <div className="flex justify-end gap-2">
+        <div className="flex justify-start gap-4">
           <Reveal>
-            <DotExpandButton
-              text="Contact me"
+            <CustomButton
+              text="Contact Me"
               iconType="contact"
               onClick={() =>
                 document.getElementById("contact")?.scrollIntoView()
               }
-            >
-              Contact me
-            </DotExpandButton>
+            />
           </Reveal>
           <Reveal>
-            <DotExpandButton
+            <CustomButton
               text="My Resume"
               iconType="resume"
               onClick={handleResume}

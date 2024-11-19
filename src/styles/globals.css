@@ -69,9 +69,8 @@ a {
 .section-wrapper {
   position: relative;
   z-index: 10;
-  max-width: 1150px;
   margin: auto;
-  padding: 9.6rem;
+  padding: 12.6rem;
   overflow: hidden;
 }
 
