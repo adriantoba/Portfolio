@@ -50,6 +50,9 @@
   margin: auto;
 
   transition: 0.25s color;
+  @media (max-width: 768px) {
+    font-size: var(--text-sm);
+  }
 }
 
 .contactEmail:hover {

@@ -16,18 +16,18 @@ export default function SimulationFluid() {
       simulationRef.current = simulation;
       simulation.setConfig({
         simResolution: 256, // 256 Resolution of the simulation grid
-        dyeResolution: 512, // 1024 Resolution of the dye grid
-        captureResolution: 128, //512 Resolution of captured frames
+        dyeResolution: 1024, // 1024 Resolution of the dye grid
+        captureResolution: 2, //512 Resolution of captured frames
         densityDissipation: 1, //1.2 Rate at which density dissipates
         velocityDissipation: 0.25, //0.5 Rate at which velocity dissipates
         pressure: 0.9, //0.7 Pressure value used in the simulation
-        pressureIterations: 10, //20 Number of pressure iterations
+        pressureIterations: 20, //20 Number of pressure iterations
         curl: 24, //30 Curl value used in the simulation
 
         splatRadius: 0.12, //0.3 Radius of the splats
         splatForce: 8000, // Force applied by the splats
         inverted: theme === "dark" ? false : true, // Inverts the colors of the simulation
-        shading: false, // Enables shading in the visualization
+        shading: true, // Enables shading in the visualization
         colorful: true, // Enables rapid changing of colors
         colorUpdateSpeed: 3, // Speed of color update
         colorPalette:

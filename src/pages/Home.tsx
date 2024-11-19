@@ -13,7 +13,7 @@ export const Home = () => {
       <Simulation />
       <SideBarRuler />
       <Heading />
-      <div className="ml-32 lg:ml-18 mt-18">
+      <div className="ml-24 lg:ml-18 mt-18">
         <main>
           <Hero />
           <About />

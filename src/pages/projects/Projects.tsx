@@ -32,7 +32,7 @@ export const Projects = () => {
 const projects = [
   {
     title: "MERN-Press",
-    imgSrc: "/assets/MernPress.jpg",
+    imgSrc: `${import.meta.env.BASE_URL}/assets/MernPress.jpg`,
     code: "https://github.com/adriantoba/Mern-Press",
     projectLink: "",
     tech: [
@@ -80,7 +80,7 @@ const projects = [
   },
   {
     title: "Tetris-React",
-    imgSrc: "/assets/Tetris.jpg",
+    imgSrc: `${import.meta.env.BASE_URL}/assets/Tetris.jpg`,
     code: "https://github.com/adriantoba/Tetris-React",
     projectLink: "https://adriantoba.github.io/Tetris-React/",
     tech: ["React", "TypeScript", "Tailwind"],
@@ -102,7 +102,7 @@ const projects = [
   },
   {
     title: "Password Generator",
-    imgSrc: "/assets/PasswordGen.jpg",
+    imgSrc: `${import.meta.env.BASE_URL}/assets/PasswordGen.jpg`,
     code: "https://github.com/adriantoba/password_generator",
     projectLink: "https://adriantoba.github.io/password_generator/",
     tech: ["JavaScript", "HTML5", "CSS"],
@@ -121,7 +121,7 @@ const projects = [
   },
   {
     title: "Personal Portfolio",
-    imgSrc: "/assets/Portfolio.jpg",
+    imgSrc: `${import.meta.env.BASE_URL}/assets/Portfolio.jpg`,
     code: "https://github.com/adriantoba/Portfolio",
     projectLink: "https://portfolio-7755.onrender.com/",
     tech: ["React", "TypeScript", "Tailwind", "SAAS"],

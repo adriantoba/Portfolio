@@ -43,7 +43,7 @@ export const Hero = () => {
             grow. Let&apos;s connect!
           </p>
         </Reveal>
-        <div className="flex justify-start gap-4">
+        <div className="flex flex-col sm:flex-row justify-start items-center sm gap-6">
           <Reveal>
             <CustomButton
               text="Contact Me"
