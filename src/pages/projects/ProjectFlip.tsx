@@ -66,25 +66,25 @@ export default function FlipCard({
         {/* Back */}
         <div
           className={`
-            absolute h-full w-full rounded-2xl bg-[var(--bg-opaque)] p-4 text-slate-200 [backface-visibility:hidden] backdrop-blur-md
+            absolute h-full w-full rounded-2xl bg-[var(--bg-opaque)] p-4 dark:text-slate-200 [backface-visibility:hidden] backdrop-blur-md
             ${self[1]}`}
         >
           <div className="flex min-h-full flex-col gap-2">
-            <h1 className="text-2xl sm:text-4xl font-bold text-white">
+            <h1 className="text-2xl sm:text-4xl font-bold dark:text-white">
               {subtitle}
             </h1>
-            <p className="mt-1 border-t border-t-gray-200 py-4 text-xl font-medium leading-normal text-gray-100">
+            <p className="mt-1 border-t border-t-gray-200 py-4 text-xl font-medium leading-normal dark:text-gray-100">
               {description}
             </p>
 
             <span
               onClick={() => setIsOpen(true)}
-              className="flex cursor-pointer text-[var(--brand)] hover:underline hover:scale-95 transition-all duration-300 justify-center"
+              className="flex cursor-pointer text-[var(--brand)] hover:underline hover:scale-95 transition-all duration-300 justify-center mb-2"
             >
               Learn more
             </span>
 
-            <p className="fixed flex flex-wrap bottom-0 gap-2 text-base pb-4 pr-3 justify-center">
+            <p className="absolute flex flex-wrap bottom-0 gap-2 text-lg sm:text-base justify-center mb-2 ">
               {tech.map((item) => (
                 <span key={item} className="chip">
                   {item}

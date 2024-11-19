@@ -22,6 +22,7 @@
 
   --text: rgb(235, 236, 243);
   --brand: rgb(216, 126, 255);
+  --brand-alt: rgb(216, 126, 255);
 }
 .light {
   --background: rgb(255, 255, 255);
@@ -31,6 +32,7 @@
 
   --text: rgb(0, 0, 0);
   --brand: rgb(255, 255, 255);
+  --brand-alt: rgb(0, 0, 0);
 }
 
 * {
@@ -81,8 +83,7 @@ a {
 }
 
 .chip {
-  font-size: var(--text-xs);
   background: var(--background-light);
-  padding: 0.2rem 0.8rem;
+  padding: 0.1rem 0.8rem;
   border-radius: 999px;
 }
