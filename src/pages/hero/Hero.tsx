@@ -8,7 +8,7 @@ export const Hero = () => {
     document.body
       .appendChild(
         Object.assign(document.createElement("a"), {
-          href: "https://drive.google.com/file/d/1uu1FyTIggyMg6DfHfVuK11I3bbF06c40/view?usp=sharing",
+          href: "https://drive.google.com/file/d/1mPniyjb1ETKMKgoyEJZGqv4s2bA4s6Nk/view?usp=drive_link",
           target: "_blank",
         })
       )

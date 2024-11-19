@@ -123,7 +123,7 @@ const projects = [
     title: "Personal Portfolio",
     imgSrc: `${import.meta.env.BASE_URL}/assets/Portfolio.jpg`,
     code: "https://github.com/adriantoba/Portfolio",
-    projectLink: "https://portfolio-7755.onrender.com/",
+    projectLink: "https://adriantoba.github.io/Portfolio/",
     tech: ["React", "TypeScript", "Tailwind", "SAAS"],
     description: "A personal portfolio website.",
     modalContent: (
