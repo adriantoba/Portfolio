@@ -13,12 +13,11 @@ export const About = () => {
         <div>
           <Reveal>
             <p className={`${styles.aboutText} ${styles.highlightFirstLetter}`}>
-              Hi, I&apos;m Adrian Toba, a front-end development enthusiast with
-              a growing expertise in HTML, CSS, JavaScript, React, and Node.js.
-              I&apos;m passionate about transforming ideas into functional,
-              responsive designs and crafting intuitive, user-friendly
-              applications. This portfolio showcases my journey and
-              progress—feel free to explore!
+              Hi, I&apos;m Adrian Toba, a front-end developer with a growing
+              expertise in HTML, CSS, JavaScript, React, and Node.js. I&apos;m
+              passionate about transforming ideas into functional, responsive
+              designs and crafting intuitive, user-friendly applications. This
+              portfolio showcases my journey and progress—feel free to explore!
               <br />
             </p>
           </Reveal>

@@ -66,7 +66,7 @@ export default function FlipCard({
         {/* Back */}
         <div
           className={`
-            absolute h-full w-full rounded-2xl bg-[var(--bg-opaque)] p-4 dark:text-slate-200 [backface-visibility:hidden] backdrop-blur-md
+            absolute h-full w-full rounded-2xl bg-zinc-900 p-4 dark:text-slate-200 text-white [backface-visibility:hidden] backdrop-blur-lg
             ${self[1]}`}
         >
           <div className="flex min-h-full flex-col gap-2">
@@ -84,7 +84,7 @@ export default function FlipCard({
               Learn more
             </span>
 
-            <p className="absolute flex flex-wrap bottom-0 gap-2 text-lg sm:text-base justify-center mb-2 ">
+            <p className="absolute flex flex-wrap bottom-0 gap-2 text-lg sm:text-base justify-center mb-2 text-zinc-900 dark:text-white">
               {tech.map((item) => (
                 <span key={item} className="chip">
                   {item}
